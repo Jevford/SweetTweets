@@ -4,7 +4,7 @@
 :root {
     --main-color: #fff;
     --menu-color: #111;
-    --overlay-color: #f2d3ed;
+    --overlay-color: #e8e1ed;
 }
 
 * {
@@ -182,7 +182,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    background-color: #5c0c99;
 }
 
 .menu ul {
@@ -191,13 +191,19 @@
 }
 
 .menu ul li a {
+    display: block;
     text-decoration: none;
-    font-size: 30px;
-    color: var(--menu-color);
+    font-size: 50px;
+    font-weight: 600px;
+    color: #f78316;
+    text-shadow: 2px 2px 4px #111;
+    transform: scale(0.7);
+    transition: 0.5s;
 }
 
 .menu ul li a:hover {
     color: var(--overlay-color);
+    transform: translateX(-10px);
 }
 
 @media(max-width:798px) {
